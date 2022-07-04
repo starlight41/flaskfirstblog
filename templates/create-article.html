@@ -1,0 +1,20 @@
+{% extends 'baza.html' %}
+
+{% block title %}
+Article creation page
+{% endblock %}
+
+
+
+{% block body %}
+<div class="container">
+    <h1> Create new article </h1>
+    <form method="post">
+            <input type="text" name="title" id="title" class="form-control" placeholder="your title"><br>
+            <textarea name="intro" id="intro" class="form-control" placeholder="Write tldr "></textarea><br>
+            <textarea name="text" id=text class="form-control" placeholder="Write your article here"></textarea><br>
+            <input type="text" class="btn btn-success" value="Send">
+
+        </form>
+</div>
+{% endblock %}

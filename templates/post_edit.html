@@ -1,0 +1,20 @@
+{% extends 'baza.html' %}
+
+{% block title %}
+Edit article
+{% endblock %}
+
+
+
+{% block body %}
+<div class="container">
+    <h1> edit article </h1>
+    <form method="post">
+            <input type="text" name="title" id="title" class="form-control" value="{{ article.title }}" placeholder="your title"><br>
+            <textarea name="intro" id="intro" class="form-control" placeholder="Write tldr ">{{ article.intro }}</textarea><br>
+            <textarea name="text" id=text class="form-control" placeholder="Write your article here">{{ article.text }</textarea><br>
+            <input type="text" class="btn btn-success" value="Edit">
+
+        </form>
+</div>
+{% endblock %}
